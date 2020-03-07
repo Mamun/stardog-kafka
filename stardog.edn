@@ -1,0 +1,11 @@
+{:meta-data-topic-name "_pipeline_metadata"
+ :sink-connector-name  "tnf_db"
+ :db                   "tnf_db"
+ :url                  "http://stardog:5820/"
+ :user                 "admin"
+ :pass                 "admin"
+ :reasoning            true
+ :key-identifier       "_id"
+ :ksql-url             "http://ksql-server:8088"
+ :kafka-broker         "broker:29092"
+ :schema-url           "http://schema-registry:8081"}

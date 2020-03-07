@@ -1,0 +1,30 @@
+{:paths     ["src"]
+ :deps      {org.clojure/clojure            {:mvn/version "1.10.1"}
+             clj-http                       {:mvn/version "3.10.0"}
+             cheshire                       {:mvn/version "5.9.0"}
+             org.clojure/data.csv           {:mvn/version "0.1.4"}
+             org.clojure/tools.logging      {:mvn/version "0.5.0"}
+
+
+             ;    fundingcircle/jackdaw {:mvn/version "0.6.8"}
+             ;  org.clojure/algo.generic  {:mvn/version "0.1.3"}
+             ;  fundingcircle/jackdaw     {:mvn/version "0.7.0" :exclusions [org.apache.zookeeper/zookeeper]}
+             ;  ;  spootnik/kinsky           {:mvn/version "0.1.23"}
+             stardog-clj                    {:mvn/version "7.0.0"}
+             ;kotr                           {:local/root "../kotr"}
+             mamun/data-flow                {:git/url "https://github.com/Mamun/data-flow"
+                                             :sha     "67cc1077e2cb890157ce427c2ffd8a77c6761304"}
+             ch.qos.logback/logback-classic {:mvn/version "1.1.7"}
+             ;  io.confluent/kafka-schema-registry-client {:mvn/version "5.3.0"}
+             ;  io.confluent/kafka-avro-serializer {:mvn/version "5.3.0"}
+             ; org.apache.kafka/kafka-clients {:mvn/version "2.3.0"}
+             }
+ :aliases   {
+             :graph {:extra-deps {org.clojure/tools.deps.graph {:mvn/version "0.2.24"}}
+                     :main-opts  ["-m" "clojure.tools.deps.graph"]}}
+ :mvn/repos {
+             ;   "confluent" {:url "https://packages.confluent.io/maven/"}
+             "stardog"   {:url "https://maven.stardog.com"}
+             "confluent" {:url "https://packages.confluent.io/maven/"}
+             }
+ }
